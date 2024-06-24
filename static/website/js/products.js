@@ -1,5 +1,5 @@
 
-fetch("static/products.json").then(function(response) {
+fetch("static/website/products.json").then(function(response) {
     return response.json();
 }).then(function(response) {
     const products = response.products;

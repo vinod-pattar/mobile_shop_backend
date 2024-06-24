@@ -7,11 +7,17 @@ from django.template import loader
 def home(request):
     # template = loader.get_template('index.html')
     # return HttpResponse(template.render(request, context))
-    return render(request, 'index.html', {'name' : "Ajay"})
+    return render(request, 'index.html', {'name' : "ashjgfdjhasfgdjh"})
 
 
 def contact(request):
-    return HttpResponse("Contact")
+    # return HttpResponse("Contact")
+    return render(request, 'contact.html')
 
 def about(request):
-    return HttpResponse("About")
+    # return HttpResponse("About")
+    return render(request, 'about.html')
+
+def services(request):
+    # return HttpResponse("Services")
+    return render(request, 'services.html')
